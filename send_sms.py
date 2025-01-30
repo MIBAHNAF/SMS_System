@@ -2,7 +2,7 @@ import sys
 import requests
 
 # Your API secret from (Tools -> API Keys) page
-api_secret = "a35130ec7b17917f90a4b1de648ff337455fbb34"
+api_secret = ""
 
 def send_sms(phone_number, name):
     # Create the default message
@@ -14,7 +14,7 @@ def send_sms(phone_number, name):
         "mode": "devices",
         "campaign": "bulk test",
         "numbers": phone_number,  # Single phone number
-        "device": "00000000-0000-0000-aae8-51abe9d16857",  # Replace with your device ID
+        "device": "",  # Replace with your device ID
         "sim": 2,  # Replace with your SIM slot number
         "priority": 1,
         "message": personalized_message,  # Default message
